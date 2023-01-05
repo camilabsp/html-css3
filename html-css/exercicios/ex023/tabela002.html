@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -23,6 +24,10 @@
         }
         tbody > tr:nth-child(2n) { /* efeito zebrado*/
             background-color: lightgray; 
+        }
+        thead > tr > th{
+            position: sticky; /* Cabeçalho fixo em tabela grande */
+            top: -1px;
         }
     </style>
 </head>
